@@ -11,7 +11,7 @@ def getLink(soup):
 
 # Task 3: Get the details from the box titled "College/school founding". Get all the college/school names and the year they were
 # founded and organize the same into key-value pairs.
-def getAdmissionsInfo2019(soup):
+def getFoundingInfo(soup):
 
     pass
 
@@ -22,7 +22,7 @@ def main():
 
     #### YOUR CODE HERE####
 
-    #Call the functions getLink(soup) and getAdmissionsInfo2019(soup) on your soup object.
+    #Call the functions getLink(soup) and getFoundingInfo(soup) on your soup object.
     pass
 
 class TestAllMethods(unittest.TestCase):
@@ -34,8 +34,8 @@ class TestAllMethods(unittest.TestCase):
     def test_link_nobel_laureates(self):
         self.assertEqual(getLink(self.soup), 'https://en.wikipedia.org/wiki/List_of_American_universities_with_Olympic_medals')
 
-    def test_admissions_info(self):
-        self.assertEqual(getAdmissionsInfo2019(self.soup), {'Literature, Science, andthe Arts': '1841',
+    def test_founding_info(self):
+        self.assertEqual(getFoundingInfo(self.soup), {'Literature, Science, andthe Arts': '1841',
                                                             'Medicine':'1850',
                                                             'Engineering': '1854', 
                                                             'Law': '1859',
